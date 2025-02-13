@@ -5,11 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
-    <script defer src="script.js"></script>
+    <script defer src="../js/script.js"></script>
+    <!-- font-awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <title>Shoe Haven</title>
   </head>
   <body>
@@ -89,42 +96,108 @@
     </section>
 
     <div class="container">
-      <article class="art">
-        <h2 class="title">Converse Chuck Taylor All Star Low Top</h2>
-        <img
-          class="product-img"
-          width="250"
-          height="250"
-          src="../img/challenges.jpg"
-          alt="converse shoes"
-        />
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <article class="art">
+              <h2 class="title">Converse Chuck Taylor All Star Low Top</h2>
+              <img
+                class="product-img"
+                src="../img/challenges.jpg"
+                alt="converse shoes"
+                width="250"
+                height="250"
+              />
+              <div class="free-shiping">
+                <p class="money"><strong>$65.00</strong></p>
+                <p class="free">Free shipping</p>
+                <p class="product-description">
+                  Ready to dress up or down, these classic canvas Chucks are an
+                  everyday wardrobe staple.
+                </p>
+                <a class="link" href="#">More information &rarr; </a> <br />
+              </div>
+              <div class="product">
+                <h3 class="details">Product details</h3>
+                <ul class="list">
+                  <li>Lightweight, durable canvas sneaker</li>
+                  <li>Lightly padded footbed for added comfort</li>
+                  <li>Iconic Chuck Taylor ankle patch</li>
+                </ul>
+              </div>
+              <button class="button">Add to cart</button>
+            </article>
+          </div>
 
-        <div class="free-shiping">
-          <p class="money"><strong>$65.00</strong></p>
-          <p class="free">Free shipping</p>
-          <p class="product-description">
-            Ready to dress up or down, these classic canvas Chucks are an
-            everyday wardrobe staple.
-          </p>
-          <a class="link" href="#">More information &rarr; </a> <br />
-          <div class="box red"></div>
-          <div class="box blue"></div>
-          <div class="box green"></div>
-          <div class="box yellow"></div>
-          <div class="box lavender"></div>
-          <div class="box purple"></div>
-        </div>
+          <div class="swiper-slide">
+            <article class="art">
+              <h2 class="title">Nike Air Max 90</h2>
+              <img
+                class="product-img"
+                src="../img/airmax.jpg"
+                alt="Nike Air Max 90"
+                width="250"
+                height="250"
+              />
+              <div class="free-shiping">
+                <p class="money"><strong>$75.00</strong></p>
+                <p class="free">Free shipping</p>
+                <p class="product-description">
+                  Ready to dress up or down, these classic canvas Chucks are an
+                  everyday wardrobe staple.
+                </p>
+                <a class="link" href="#">More information &rarr; </a> <br />
+              </div>
+              <div class="product">
+                <h3 class="details">Product details</h3>
+                <ul class="list">
+                  <li>Lightweight, durable canvas sneaker</li>
+                  <li>Lightly padded footbed for added comfort</li>
+                  <li>Iconic Chuck Taylor ankle patch</li>
+                </ul>
+              </div>
+              <button class="button">Add to cart</button>
+            </article>
+          </div>
 
-        <div class="product">
-          <h3 class="details">Product details</h3>
-          <ul class="list">
-            <li>Lightweight, durable canvas sneaker</li>
-            <li>Lightly padded footbed for added comfort</li>
-            <li>Iconic Chuck Taylor ankle patch</li>
-          </ul>
+          <div class="swiper-slide">
+            <article class="art">
+              <h2 class="title">Adidas Ultraboost</h2>
+              <img
+                class="product-img"
+                src="../img/ultraboost.jpg"
+                alt="Adidas Ultraboost"
+                width="250"
+                height="250"
+              />
+              <div class="free-shiping">
+                <p class="money"><strong>$85.00</strong></p>
+                <p class="free">Free shipping</p>
+                <p class="product-description">
+                  Ready to dress up or down, these classic canvas Chucks are an
+                  everyday wardrobe staple.
+                </p>
+                <a class="link" href="#">More information &rarr; </a> <br />
+              </div>
+              <div class="product">
+                <h3 class="details">Product details</h3>
+                <ul class="list">
+                  <li>Lightweight, durable canvas sneaker</li>
+                  <li>Lightly padded footbed for added comfort</li>
+                  <li>Iconic Chuck Taylor ankle patch</li>
+                </ul>
+              </div>
+              <button class="button">Add to cart</button>
+            </article>
+          </div>
         </div>
-        <button class="button">Add to cart</button>
-      </article>
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
