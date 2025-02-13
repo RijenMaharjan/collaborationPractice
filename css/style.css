@@ -26,15 +26,15 @@ body {
 .art {
   width: 825px;
   margin: 50px auto;
-
-  border: 4px solid black;
+  border: 2px solid black;
 }
 
 .title {
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  background-color: #ddc7c7;
+  background-color: #000;
+  color: #fff;
   padding: 15px;
   position: relative;
 }
@@ -94,7 +94,7 @@ a:hover,
   margin-right: 0px;
 }
 
-/* .red {
+.red {
   background-color: red;
 }
 
@@ -116,7 +116,7 @@ a:hover,
 
 .purple {
   background-color: purple;
-} */
+}
 /* product */
 
 .product {
@@ -415,7 +415,7 @@ h4 {
 .product-price {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #ff5733;
+  color: #000;
   margin-bottom: 10px;
 }
 
@@ -423,23 +423,6 @@ h4 {
   font-size: 1rem;
   color: #666;
   margin-bottom: 15px;
-}
-
-.facility-icons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin: 15px 0;
-}
-
-.facility-icons i {
-  font-size: 1.4rem;
-  color: #ff5733;
-  transition: transform 0.3s ease;
-}
-
-.facility-icons i:hover {
-  transform: scale(1.2);
 }
 
 .product-btns {
@@ -459,19 +442,21 @@ h4 {
 }
 
 .btn-primary {
-  background-color: #ff5733;
+  background-color: black;
   color: #fff;
 }
 
 .btn-primary:hover {
-  background-color: #d43f1d;
+  background-color: white;
+  border: 1px solid black;
 }
 
 .btn-secondary {
-  background-color: #333;
+  background-color: black;
   color: #fff;
 }
 
 .btn-secondary:hover {
-  background-color: #222;
+  background-color: white;
+  border: 1px solid black;
 }
