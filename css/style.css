@@ -140,7 +140,7 @@ a:hover,
   margin-bottom: 10px;
 }
 
-h2::after {
+.h2::after {
   content: "SALE";
   background-color: red;
   display: inline-block;
