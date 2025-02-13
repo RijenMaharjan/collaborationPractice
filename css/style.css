@@ -1,0 +1,354 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+/* .container {
+} */
+/* .container {
+  float: ;
+} */
+.main {
+  float: left;
+}
+
+.product-img {
+  float: left;
+  margin-right: 40px;
+}
+
+.art {
+  width: 825px;
+  margin: 50px auto;
+
+  border: 4px solid black;
+}
+
+.title {
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #ddc7c7;
+  padding: 15px;
+  position: relative;
+}
+
+/* product info */
+
+.free-shiping {
+  float: left;
+  width: 240px;
+  margin-right: 40px;
+  margin-top: 30px;
+}
+
+.money {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 0px;
+  float: left;
+}
+
+.free {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #444;
+  font-weight: bold;
+  margin-bottom: 20px;
+  float: right;
+  margin-top: 8px;
+}
+
+.product-description {
+  clear: both;
+}
+
+.link:link,
+.link:visited {
+  color: black;
+  margin-bottom: 25px;
+  display: inline-block;
+}
+
+a:hover,
+.link:active {
+  text-decoration: none;
+}
+
+.box {
+  display: inline-block;
+  margin-right: 5px;
+  padding: 5px;
+  width: 15px;
+  height: 15px;
+}
+
+.box div:link:last-child {
+  margin-right: 0px;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.lavender {
+  background-color: lavender;
+}
+
+.purple {
+  background-color: purple;
+}
+/* product */
+
+.product {
+  float: left;
+  width: 240px;
+  margin-top: 30px;
+}
+
+.details {
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.list {
+  list-style: square;
+  margin-left: 20px;
+}
+
+.list li:last-child {
+  margin-bottom: 10px;
+}
+
+h2::after {
+  content: "SALE";
+  background-color: red;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 13px;
+  color: #ddc7c7;
+  padding: 3px 10px;
+  margin: 10px;
+  position: absolute;
+  top: -25px;
+  left: -40px;
+  letter-spacing: 2px;
+}
+
+/* li:last-child {
+  margin-bottom: 0px;
+} */
+
+/* button */
+.button {
+  background-color: black;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  cursor: pointer;
+  width: 100%;
+  padding: 15px;
+  border-top: 3px solid black;
+}
+
+.button:hover {
+  color: black;
+  background-color: white;
+}
+
+h1 {
+  color: black;
+}
+
+h2 {
+  color: red;
+}
+h4 {
+  color: yellow;
+}
+
+/* navbar */
+/* Navbar */
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Logo on left, menu center, buttons right */
+  align-items: center;
+  background-color: #000;
+  padding: 15px 20px;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Centering the nav-links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f4a261;
+}
+
+/* Right-aligned Login & Register Buttons */
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.nav-btns {
+  display: flex;
+  gap: 10px;
+  margin-left: auto; /* Pushes to the right */
+}
+
+.btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.Register {
+  background-color: #f4a261;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Mobile Menu */
+.menu-toggle {
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #222;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-btns {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+}
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://source.unsplash.com/1600x900/?nature,technology") center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #e76f51;
+}
