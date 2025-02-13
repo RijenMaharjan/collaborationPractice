@@ -1,2 +1,2 @@
-oh yeah
-eh hora
+Just a practice repository for collaboration !
+Practice git 
