@@ -177,10 +177,6 @@ h2::after {
   background-color: white;
 }
 
-h1 {
-  color: black;
-}
-
 h2 {
   color: red;
 }
@@ -188,8 +184,6 @@ h4 {
   color: yellow;
 }
 
-/* navbar */
-/* Navbar */
 /* Navbar */
 .navbar {
   display: flex;
@@ -314,11 +308,12 @@ h4 {
     right: 20px;
   }
 }
+
 /* Hero Section */
 .hero {
-  height: 100vh;
+  height: 50vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://source.unsplash.com/1600x900/?nature,technology") center/cover;
+    url("../img/homeBanner.png") center/cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -350,5 +345,6 @@ h4 {
 }
 
 .btn:hover {
-  background-color: #e76f51;
+  background-color: #fff;
+  color: black;
 }
