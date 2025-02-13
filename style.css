@@ -187,3 +187,113 @@ h2 {
 h4 {
   color: yellow;
 }
+
+/* navbar */
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 15px 20px;
+  color: white;
+}
+
+/* Centering the nav-links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f4a261;
+}
+
+/* Mobile Menu */
+.menu-toggle {
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #222;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://source.unsplash.com/1600x900/?nature,technology") center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f4a261;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #e76f51;
+}
