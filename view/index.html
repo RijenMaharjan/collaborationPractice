@@ -42,6 +42,73 @@
       <div class="menu-toggle">&#9776;</div>
     </nav>
 
+    <!-- Login and register form container modal -->
+    <div class="modal-container">
+      <div class="modal-content">
+        <div class="form-container login-form">
+          <form id="login-form" class="login-form" action="" method="POST">
+            <div class="formHeader">
+              <h4>User Login</h4>
+              <i class="fa-solid fa-x lclose"></i>
+            </div>
+            <div class="formContent">
+              <div class="email">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div class="password">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required />
+              </div>
+              <input type="submit" name="loginbtn" />
+            </div>
+          </form>
+        </div>
+
+        <div class="form-container register-form">
+          <form
+            class="model-form"
+            action=""
+            method="post"
+            enctype="multipart/form-data"
+          >
+            <div class="formHeader">
+              <h4>User Registration</h4>
+              <i class="fa-solid fa-x rclose"></i>
+            </div>
+            <div class="formContent">
+              <div class="username">
+                <label>Username:</label>
+                <input type="text" name="full_name" id="username" required />
+              </div>
+              <div class="email">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="register-email" required />
+              </div>
+              <div class="password">
+                <label>Password</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="register-password"
+                  required
+                />
+              </div>
+              <div class="password">
+                <label>Mobile</label>
+                <input type="number" name="mobile" id="mobile" required />
+              </div>
+              <div class="password">
+                <label>Address</label>
+                <input type="text" name="address" id="address" required />
+              </div>
+              <input type="hidden" name="ref" value="front" />
+              <input type="submit" name="registerbtn" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <!-- Hero Section -->
     <section class="hero">
       <h1>Welcome Shoe Haven</h1>
@@ -134,7 +201,7 @@
               <h2 class="title h2">Nike Air Max 90</h2>
               <img
                 class="product-img"
-                src="../img/airmax.jpg"
+                src="../img/challenges.jpg"
                 alt="Nike Air Max 90"
                 width="250"
                 height="250"
@@ -165,7 +232,7 @@
               <h2 class="title h2">Adidas Ultraboost</h2>
               <img
                 class="product-img"
-                src="../img/ultraboost.jpg"
+                src="../img/challenges.jpg"
                 alt="Adidas Ultraboost"
                 width="250"
                 height="250"
@@ -199,5 +266,33 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+      var loginBtn = document.querySelector(".show-login-form");
+      var registerBtn = document.querySelector(".show-register-form");
+      var modal = document.querySelector(".modal-container");
+      var loginForm = document.querySelector(".login-form");
+      var registerForm = document.querySelector(".register-form");
+      var lclose = document.querySelector(".lclose");
+      var rclose = document.querySelector(".rclose");
+
+      loginBtn.addEventListener("click", function () {
+        modal.style.display = "block";
+        loginForm.style.display = "block";
+        registerForm.style.display = "none";
+      });
+
+      registerBtn.addEventListener("click", function () {
+        modal.style.display = "block";
+        loginForm.style.display = "none";
+        registerForm.style.display = "block";
+      });
+
+      lclose.addEventListener("click", function () {
+        modal.style.display = "none";
+      });
+      rclose.addEventListener("click", function () {
+        modal.style.display = "none";
+      });
+    </script>
   </body>
 </html>
