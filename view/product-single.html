@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/product-single.css" />
+    <script defer src="../js/script.js"></script>
+    <script defer src="../js/form-modal.js"></script>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <title>Shoe Haven</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Shoe Haven</div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Mens <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-content">
+            <li><a href="men.html">Formal</a></li>
+            <li><a href="men-party.html">Party</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#">Womans <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-content">
+            <li><a href="woman-formal.html">Formal</a></li>
+            <li><a href="woman-party.html">Party</a></li>
+          </ul>
+        </li>
+        <li><a href="kids.html">Kids</a></li>
+      </ul>
+
+      <div class="nav-btns">
+        <button id="loginBtn" class="btn secondary-btn show-login-form">
+          Login
+        </button>
+        <button id="registerBtn" class="btn Register show-register-form">
+          Register
+        </button>
+        <a href="cart.html" class="cart-logo">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+      </div>
+
+      <div class="menu-toggle">&#9776;</div>
+    </nav>
+
+    <!-- Login and register form container modal -->
+    <div class="modal-container">
+      <div class="modal-content">
+        <div class="form-container login-form">
+          <form id="login-form" class="login-form" action="" method="POST">
+            <div class="formHeader">
+              <h4>User Login</h4>
+              <i class="fa-solid fa-x lclose"></i>
+            </div>
+            <div class="formContent">
+              <div class="email">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div class="password">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required />
+              </div>
+              <input type="submit" name="loginbtn" />
+            </div>
+          </form>
+        </div>
+
+        <div class="form-container register-form">
+          <form
+            class="model-form"
+            action=""
+            method="post"
+            enctype="multipart/form-data"
+          >
+            <div class="formHeader">
+              <h4>User Registration</h4>
+              <i class="fa-solid fa-x rclose"></i>
+            </div>
+            <div class="formContent">
+              <div class="username">
+                <label>Username:</label>
+                <input type="text" name="full_name" id="username" required />
+              </div>
+              <div class="email">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="register-email" required />
+              </div>
+              <div class="password">
+                <label>Password</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="register-password"
+                  required
+                />
+              </div>
+              <div class="password">
+                <label>Mobile</label>
+                <input type="number" name="mobile" id="mobile" required />
+              </div>
+              <div class="password">
+                <label>Address</label>
+                <input type="text" name="address" id="address" required />
+              </div>
+              <input type="hidden" name="ref" value="front" />
+              <input type="submit" name="registerbtn" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="product-single">
+            <div class="product-image">
+                <img src="../img/kids1.jpg" alt="Shoe Heaven Sneaker" class="product-single-img">
+            </div>
+            <div class="product-single-details">
+                <h2 class="product-single-title">Shoe Heaven Sneaker</h2>
+                <h3 class="product-single-price">$79.99</h3>
+                <p class="label">Choose Color:</p>
+                <div class="color-options">
+                    <span class="color-box" style="background: black;"></span>
+                    <span class="color-box" style="background: red;"></span>
+                    <span class="color-box" style="background: blue;"></span>
+                    <span class="color-box" style="background: green;"></span>
+                </div>
+                <p class="label">Quantity:</p>
+                <input type="number" id="quantity" value="1" min="1">
+                <div class="buttons">
+                    <button class="btn btn-primary">Buy Now</button>
+                    <button class="btn btn-secondary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="description">
+            <h2>Product Description</h2>
+            <p>
+                Experience ultimate comfort and style with our premium sneakers. Designed for all-day wear, 
+                these sneakers feature a breathable upper, cushioned sole, and durable construction. Perfect 
+                for casual outings, sports activities, and everyday fashion.
+            </p>
+        </div>
+        <div class="related-products">
+            <h2>Related Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="shoe1.jpg" alt="Sneaker 1">
+                    <p>Sneaker Pro</p>
+                    <span>$89.99</span>
+                </div>
+                <div class="product-card">
+                    <img src="shoe2.jpg" alt="Sneaker 2">
+                    <p>Urban Runner</p>
+                    <span>$69.99</span>
+                </div>
+                <div class="product-card">
+                    <img src="shoe3.jpg" alt="Sneaker 3">
+                    <p>Classic White</p>
+                    <span>$74.99</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div class="footer-container">
+          <div class="footer-section about">
+            <h3>About Shoe Haven</h3>
+            <p>
+              Your one-stop shop for the best shoes and accessories for men,
+              women, and kids.
+            </p>
+          </div>
+  
+          <div class="footer-section links">
+            <h3>Shoe Haven</h3>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="service.html">Services</a></li>
+              <li><a href="contactus.html">Contact</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <ul>
+              <li>
+                Email: <a href="mailto:info@shoehaven.com">info@shoehaven.com</a>
+              </li>
+              <li>Phone: <a href="tel:+1234567890">+1 234 567 890</a></li>
+              <li>Address: 123 Shoe Ave, Fashion City, USA</li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="footer-bottom">
+          <p>&copy; 2025 Shoe Haven. All rights reserved.</p>
+        </div>
+      </footer>
+</body>
+</html>
