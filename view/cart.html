@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/cart.css" />
+    <script defer src="../js/script.js"></script>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <title>Shoe Haven</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Shoe Haven</div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Mens <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-content">
+            <li><a href="men.html">Formal</a></li>
+            <li><a href="men-party.html">Party</a></li>
+          </ul>
+        </li>
+
+        <!-- Womans Dropdown -->
+        <li class="dropdown">
+          <a href="#">Womans <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-content">
+            <li><a href="woman-formal.html">Formal</a></li>
+            <li><a href="woman-party.html">Party</a></li>
+          </ul>
+        </li>
+        <li><a href="kids.html">Kids</a></li>
+      </ul>
+
+      <div class="nav-btns">
+        <button id="loginBtn" class="btn secondary-btn show-login-form">
+          Login
+        </button>
+        <button id="registerBtn" class="btn Register show-register-form">
+          Register
+        </button>
+      </div>
+
+      <div class="menu-toggle">&#9776;</div>
+    </nav>
+
+    <section class="banner"></section>
+
+    <main class="cart-page">
+      <h1>Your Cart</h1>
+
+      <!-- Cart Items List -->
+      <div class="cart-items">
+        <!-- Cart Item 1 -->
+        <div class="cart-item">
+          <img src="../img/shoe1.jpg" alt="Mens Formal Shoe" />
+          <div class="item-details">
+            <h3>Mens Formal Shoe</h3>
+            <p>Price: $99.99</p>
+            <p>
+              Quantity:
+              <input type="number" value="1" min="1" />
+            </p>
+          </div>
+          <div class="item-remove">
+            <button class="remove-btn">
+              <i class="fa fa-trash"></i> Remove
+            </button>
+          </div>
+        </div>
+        <!-- Cart Item 2 -->
+        <div class="cart-item">
+          <img src="../img/shoe2.jpg" alt="Womans Party Shoe" />
+          <div class="item-details">
+            <h3>Womans Party Shoe</h3>
+            <p>Price: $89.99</p>
+            <p>
+              Quantity:
+              <input type="number" value="2" min="1" />
+            </p>
+          </div>
+          <div class="item-remove">
+            <button class="remove-btn">
+              <i class="fa fa-trash"></i> Remove
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cart Summary -->
+      <div class="cart-summary">
+        <h2>Cart Summary</h2>
+        <p>Subtotal: $279.97</p>
+        <p>Tax: $20.00</p>
+        <p class="total">Total: $299.97</p>
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-section about">
+          <h3>About Shoe Haven</h3>
+          <p>
+            Your one-stop shop for the best shoes and accessories for men,
+            women, and kids.
+          </p>
+        </div>
+
+        <div class="footer-section links">
+          <h3>Shoe Haven</h3>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section contact">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>
+              Email: <a href="mailto:info@shoehaven.com">info@shoehaven.com</a>
+            </li>
+            <li>Phone: <a href="tel:+1234567890">+1 234 567 890</a></li>
+            <li>Address: 123 Shoe Ave, Fashion City, USA</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Shoe Haven. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
