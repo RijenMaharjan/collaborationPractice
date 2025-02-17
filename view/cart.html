@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/cart.css" />
     <script defer src="../js/script.js"></script>
     <!-- font-awesome -->
     <link
@@ -63,51 +64,56 @@
 
     <section class="banner"></section>
 
-    <section class="product-section">
-      <h3 class="section-title">MEN FORMAL SHOES</h3>
-      <div class="product-container">
-        <div class="product-card">
-          <div class="product-image">
-            <img src="../img/kids1.jpg" alt="Kids Shoes" />
-          </div>
-          <div class="product-details">
-            <h4 class="product-title">Kids Shoe</h4>
-            <p class="product-price">$49.99</p>
-            <div class="product-btns">
-              <button class="btn btn-primary">Buy Now</button>
-              <button class="btn btn-secondary">Add to Cart</button>
-            </div>
-          </div>
-        </div>
+    <main class="cart-page">
+      <h1>Your Cart</h1>
 
-        <div class="product-card">
-          <div class="product-image">
-            <img src="../img/kids1.jpg" alt="Kids Shoes" />
+      <!-- Cart Items List -->
+      <div class="cart-items">
+        <!-- Cart Item 1 -->
+        <div class="cart-item">
+          <img src="../img/shoe1.jpg" alt="Mens Formal Shoe" />
+          <div class="item-details">
+            <h3>Mens Formal Shoe</h3>
+            <p>Price: $99.99</p>
+            <p>
+              Quantity:
+              <input type="number" value="1" min="1" />
+            </p>
           </div>
-          <div class="product-details">
-            <h4 class="product-title">Kids Shoe</h4>
-            <p class="product-price">$49.99</p>
-            <div class="product-btns">
-              <button class="btn btn-primary">Buy Now</button>
-              <button class="btn btn-secondary">Add to Cart</button>
-            </div>
+          <div class="item-remove">
+            <button class="remove-btn">
+              <i class="fa fa-trash"></i> Remove
+            </button>
           </div>
         </div>
-        <div class="product-card">
-          <div class="product-image">
-            <img src="../img/kids1.jpg" alt="Kids Shoes" />
+        <!-- Cart Item 2 -->
+        <div class="cart-item">
+          <img src="../img/shoe2.jpg" alt="Womans Party Shoe" />
+          <div class="item-details">
+            <h3>Womans Party Shoe</h3>
+            <p>Price: $89.99</p>
+            <p>
+              Quantity:
+              <input type="number" value="2" min="1" />
+            </p>
           </div>
-          <div class="product-details">
-            <h4 class="product-title">Kids Shoe</h4>
-            <p class="product-price">$49.99</p>
-            <div class="product-btns">
-              <button class="btn btn-primary">Buy Now</button>
-              <button class="btn btn-secondary">Add to Cart</button>
-            </div>
+          <div class="item-remove">
+            <button class="remove-btn">
+              <i class="fa fa-trash"></i> Remove
+            </button>
           </div>
         </div>
       </div>
-    </section>
+
+      <!-- Cart Summary -->
+      <div class="cart-summary">
+        <h2>Cart Summary</h2>
+        <p>Subtotal: $279.97</p>
+        <p>Tax: $20.00</p>
+        <p class="total">Total: $299.97</p>
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </main>
 
     <footer class="site-footer">
       <div class="footer-container">
