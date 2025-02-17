@@ -560,3 +560,14 @@ h4 {
   height: 44px;
   font-size: 18px;
 }
+
+.nav-btns .cart-logo {
+  margin-left: 15px;
+  font-size: 1.5em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-btns .cart-logo:hover {
+  color: #bebcbc;
+}
