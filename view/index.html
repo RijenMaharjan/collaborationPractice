@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
     <script defer src="../js/script.js"></script>
     <!-- font-awesome -->
     <link
@@ -25,9 +26,23 @@
 
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="service.html">Services</a></li>
-        <li><a href="contactus.html">Contact</a></li>
+        <li class="dropdown">
+          <a href="#">Mens <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-content">
+            <li><a href="men.html">Formal</a></li>
+            <li><a href="men-party.html">Party</a></li>
+          </ul>
+        </li>
+
+        <!-- Womans Dropdown -->
+        <li class="dropdown">
+          <a href="#">Womans <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-content">
+            <li><a href="woman-formal.html">Formal</a></li>
+            <li><a href="woman-party.html">Party</a></li>
+          </ul>
+        </li>
+        <li><a href="kids.html">Kids</a></li>
       </ul>
 
       <div class="nav-btns">
@@ -41,6 +56,74 @@
 
       <div class="menu-toggle">&#9776;</div>
     </nav>
+
+    <!-- Login and register form container modal -->
+    <div class="modal-container">
+      <div class="modal-content">
+        <div class="form-container login-form">
+          <form id="login-form" class="login-form" action="" method="POST">
+            <div class="formHeader">
+              <h4>User Login</h4>
+              <i class="fa-solid fa-x lclose"></i>
+            </div>
+            <div class="formContent">
+              <div class="email">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div class="password">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required />
+              </div>
+              <input type="submit" name="loginbtn" />
+            </div>
+          </form>
+        </div>
+
+        <div class="form-container register-form">
+          <form
+            class="model-form"
+            action=""
+            method="post"
+            enctype="multipart/form-data"
+          >
+            <div class="formHeader">
+              <h4>User Registration</h4>
+              <i class="fa-solid fa-x rclose"></i>
+            </div>
+            <div class="formContent">
+              <div class="username">
+                <label>Username:</label>
+                <input type="text" name="full_name" id="username" required />
+              </div>
+              <div class="email">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="register-email" required />
+              </div>
+              <div class="password">
+                <label>Password</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="register-password"
+                  required
+                />
+              </div>
+              <div class="password">
+                <label>Mobile</label>
+                <input type="number" name="mobile" id="mobile" required />
+              </div>
+              <div class="password">
+                <label>Address</label>
+                <input type="text" name="address" id="address" required />
+              </div>
+              <input type="hidden" name="ref" value="front" />
+              <input type="submit" name="registerbtn" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -134,7 +217,7 @@
               <h2 class="title h2">Nike Air Max 90</h2>
               <img
                 class="product-img"
-                src="../img/airmax.jpg"
+                src="../img/challenges.jpg"
                 alt="Nike Air Max 90"
                 width="250"
                 height="250"
@@ -165,7 +248,7 @@
               <h2 class="title h2">Adidas Ultraboost</h2>
               <img
                 class="product-img"
-                src="../img/ultraboost.jpg"
+                src="../img/challenges.jpg"
                 alt="Adidas Ultraboost"
                 width="250"
                 height="250"
@@ -197,7 +280,71 @@
       </div>
     </div>
 
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-section about">
+          <h3>About Shoe Haven</h3>
+          <p>
+            Your one-stop shop for the best shoes and accessories for men,
+            women, and kids.
+          </p>
+        </div>
+
+        <div class="footer-section links">
+          <h3>Shoe Haven</h3>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section contact">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>
+              Email: <a href="mailto:info@shoehaven.com">info@shoehaven.com</a>
+            </li>
+            <li>Phone: <a href="tel:+1234567890">+1 234 567 890</a></li>
+            <li>Address: 123 Shoe Ave, Fashion City, USA</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Shoe Haven. All rights reserved.</p>
+      </div>
+    </footer>
+
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+      var loginBtn = document.querySelector(".show-login-form");
+      var registerBtn = document.querySelector(".show-register-form");
+      var modal = document.querySelector(".modal-container");
+      var loginForm = document.querySelector(".login-form");
+      var registerForm = document.querySelector(".register-form");
+      var lclose = document.querySelector(".lclose");
+      var rclose = document.querySelector(".rclose");
+
+      loginBtn.addEventListener("click", function () {
+        modal.style.display = "block";
+        loginForm.style.display = "block";
+        registerForm.style.display = "none";
+      });
+
+      registerBtn.addEventListener("click", function () {
+        modal.style.display = "block";
+        loginForm.style.display = "none";
+        registerForm.style.display = "block";
+      });
+
+      lclose.addEventListener("click", function () {
+        modal.style.display = "none";
+      });
+      rclose.addEventListener("click", function () {
+        modal.style.display = "none";
+      });
+    </script>
   </body>
 </html>

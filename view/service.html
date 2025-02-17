@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
     <link rel="stylesheet" href="../css/service.css" />
     <script defer src="script.js"></script>
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  />
-  <!-- Swiper CSS -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>Challenge 2</title>
   </head>
   <body>
@@ -24,9 +25,23 @@
 
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="service.html">Services</a></li>
-        <li><a href="contactus.html">Contact</a></li>
+        <li class="dropdown">
+          <a href="#">Mens <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-content">
+            <li><a href="men.html">Formal</a></li>
+            <li><a href="men-party.html">Party</a></li>
+          </ul>
+        </li>
+
+        <!-- Womans Dropdown -->
+        <li class="dropdown">
+          <a href="#">Womans <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-content">
+            <li><a href="woman-formal.html">Formal</a></li>
+            <li><a href="woman-party.html">Party</a></li>
+          </ul>
+        </li>
+        <li><a href="kids.html">Kids</a></li>
       </ul>
 
       <div class="nav-btns">
@@ -46,8 +61,9 @@
       <h3 class="section-title h-font">Our Services</h3>
       <div class="fp-detail">
         <p>
-          At Shoe Heaven, we provide top-tier services to cater to your shoe care and shopping needs.
-          From custom fittings to professional restoration, we ensure excellence in every step.
+          At Shoe Heaven, we provide top-tier services to cater to your shoe
+          care and shopping needs. From custom fittings to professional
+          restoration, we ensure excellence in every step.
         </p>
       </div>
 
@@ -65,7 +81,10 @@
             <i class="fas fa-tools"></i>
             <span>Shoe Repair & Restoration</span>
           </div>
-          <p>We restore worn-out shoes and repair damaged soles to extend their lifespan.</p>
+          <p>
+            We restore worn-out shoes and repair damaged soles to extend their
+            lifespan.
+          </p>
         </div>
 
         <div class="fp-facilities">
@@ -77,6 +96,42 @@
         </div>
       </div>
     </section>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-section about">
+          <h3>About Shoe Haven</h3>
+          <p>
+            Your one-stop shop for the best shoes and accessories for men,
+            women, and kids.
+          </p>
+        </div>
+
+        <div class="footer-section links">
+          <h3>Shoe Haven</h3>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section contact">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>
+              Email: <a href="mailto:info@shoehaven.com">info@shoehaven.com</a>
+            </li>
+            <li>Phone: <a href="tel:+1234567890">+1 234 567 890</a></li>
+            <li>Address: 123 Shoe Ave, Fashion City, USA</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Shoe Haven. All rights reserved.</p>
+      </div>
+    </footer>
 
     <script>
       var swiper = new Swiper(".mySwiper", {
