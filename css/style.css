@@ -3,7 +3,24 @@
   margin: 0px;
   box-sizing: border-box;
 }
-
+.containers {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+}
+.image-grid {
+  display: flex;
+  gap: 10px;
+}
+.image-grid img {
+  width: 250px;
+  height: auto;
+  border: 2px solid black;
+}
 body {
   font-family: sans-serif;
   line-height: 1.4;
