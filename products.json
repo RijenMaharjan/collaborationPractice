@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "name": "Nike Blazer Mid '77 Vintage",
+    "image": "../img/NIKEBLAZER.png",
+    "description": "In the ‘70s, Nike was the new shoe on the block. So new in fact, we were still breaking into the basketball scene and testing prototypes on the feet of our local team. Of course, the design improved over the years, but the name stuck. The Nike Blazer Mid ’77 Vintage—classic since the beginning.",
+    "color": ["University Blue", "Muslin", "Black", "Sail"],
+    "size": ["7", "8", "9"],
+    "price": "$110",
+    "featured": true,
+    "category": { "mainCat": "men", "SubCat": ["Formal", "Party"] }
+  },
+  {
+    "id": 2,
+    "name": "Nike Blazer Mid '77 Vintage",
+    "image": "../img/NIKEBLAZER.png",
+    "description": "In the ‘70s, Nike was the new shoe on the block. So new in fact, we were still breaking into the basketball scene and testing prototypes on the feet of our local team. Of course, the design improved over the years, but the name stuck. The Nike Blazer Mid ’77 Vintage—classic since the beginning.",
+    "color": ["University Blue", "Muslin", "Black", "Sail"],
+    "size": ["7", "8", "9"],
+    "price": "$110",
+    "featured": true,
+    "category": { "mainCat": "men", "SubCat": ["Formal", "Party"] }
+  },
+  {
+    "id": 3,
+    "name": "Dixon Chukka Boot",
+    "image": "../img/Dixon.png",
+    "description": "Premium suede lends old-world charm to this water-repellent Chukka boot with breathable linings and a cushy antimicrobial insole for all-day comfort.",
+    "color": ["Brown", "Brown Suede", "Taupe Suede"],
+    "size": ["8", "9", "10"],
+    "price": "$119.90",
+    "featured": true,
+    "category": { "mainCat": "men", "SubCat": ["Formal", "Party"] }
+  },
+  {
+    "id": 4,
+    "name": "Speedcat Piping",
+    "image": "../img/Speedcat.png",
+    "description": "A PUMA icon inspired by the speed of the racetrack: the Speedcat. This new version, the Speedcat Piping Sneaker, features a suede upper and a leather PUMA Formstrip on the side with stand-out piping details. Own the low-profile trend with its classic, low-profile shape and sleek lines that look fast and bold.",
+    "color": ["Sea Kelp-Rose Mauve"],
+    "size": ["8", "8.5", "9"],
+    "price": "$110",
+    "featured": true,
+    "category": { "mainCat": "women", "SubCat": ["Formal", "Party"] }
+  },
+  {
+    "id": 5,
+    "name": "Nike Blazer Mid '77 Vintage",
+    "image": "../img/AIRMAXDN.png",
+    "description": "In the ‘70s, Nike was the new shoe on the block. So new in fact, we were still breaking into the basketball scene and testing prototypes on the feet of our local team. Of course, the design improved over the years, but the name stuck. The Nike Blazer Mid ’77 Vintage—classic since the beginning.",
+    "color": ["University Blue", "Muslin", "Black", "Sail"],
+    "size": ["8", "9", "10"],
+    "price": "$160",
+    "featured": true,
+    "category": { "mainCat": "women", "SubCat": ["Formal", "Party"] }
+  },
+  {
+    "id": 6,
+    "name": "Tatiana Waterproof Knee High Boot",
+    "image": "../img/Tatiana.png",
+    "description": "Stretchy goring on the back cuff means easy entry into this knee-high boot fashioned from waterproof suede for weather protection.",
+    "color": ["Taupe Suede"],
+    "size": ["7", "8", "9"],
+    "price": "$99.99",
+    "featured": true,
+    "category": { "mainCat": "women", "SubCat": ["Formal", "Party"] }
+  },
+  {
+    "id": 7,
+    "name": "Air Jordan 1 High OG 'Black Toe'",
+    "image": "../img/AIRJORDAN1-kids.png",
+    "description": "Familiar but always fresh, the iconic Air Jordan 1 is remastered for today's sneakerhead culture. This Retro High OG version goes all in with premium leather, comfortable cushioning and classic design details.",
+    "color": ["White", "Varsity Red", "Black", "Sail"],
+    "size": ["3.5", "4.5", "5"],
+    "price": "$110",
+    "featured": true,
+    "category": "kids"
+  },
+  {
+    "id": 8,
+    "name": "Nike Vomero 5",
+    "image": "../img/VOMERO.png",
+    "description": "Lace up and step into a new lane with the Vomero 5, your go-to for comfortable cushioning and bold style. Plush foam underfoot pairs with layers of mesh, synthetic leather and plastic accents up top to make one of the coolest sneakers of the season.",
+    "color": ["Pale Ivory", "Sanddrift", "Black"],
+    "size": ["3.5", "4.5", "5"],
+    "price": "$110",
+    "featured": true,
+    "category": "kids"
+  },
+  {
+    "id": 9,
+    "name": "PUMA x TMNT Suede XL",
+    "image": "../img/PUMA-x-TMNT.png",
+    "description": "Deep from within the New York City sewers, its everyone's favorite pizza-loving, skateboarding, crime-fighting team: the Teenage Mutant Ninja Turtles. PUMA is teaming up with the heroes in a half-shell for a totally cool collaboration with a new take on the Suede XL. This new and exaggerated take on the Suede Classic has been blazing its own trail and making a name for itself in the streetstyle world.",
+    "color": ["Vine-Gum"],
+    "size": ["4.5", "5", "6"],
+    "price": "$90",
+    "featured": true,
+    "category": "kids"
+  }
+]
